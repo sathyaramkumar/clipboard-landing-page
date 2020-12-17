@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "_global.scss",
+        "_variables.scss",
+        "_header.scss",
+        "_track.scss",
+        "_access.scss",
+        "_availablity.scss",
+        "_brand.scss",
+        "_workflow.scss",
+        "_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
