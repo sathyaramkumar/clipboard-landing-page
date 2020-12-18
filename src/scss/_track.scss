@@ -1,0 +1,66 @@
+.track {
+    text-align: center;
+    &__contant {
+        &__title {
+            color: $darkGrayishBlue;
+            font-size: 35px;
+        }
+        &__text {
+            max-width: 350px;
+            margin: 25px auto;
+            font-size: $fontSize;
+            color: $grayishBlue;
+        }
+    }
+    &__container {
+        &__img {
+            width: 80vw;
+            margin: 25px auto;
+        }
+        .card__container {
+            .card {
+                margin: 40px auto;
+                &__title {
+                    font-size: 25px;
+                    color: $darkGrayishBlue;
+                }
+                &__text {
+                    font-size: $fontSize;
+                    color: $grayishBlue;
+                    max-width: 350px;
+                    margin: 15px auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .track {
+        &__contant {
+            &__text {
+                max-width: 700px;
+            }
+        }
+        &__container {
+            @include flex(row);
+            &__img {
+                flex-basis: 10vw;
+                margin-left: -20px;
+            }
+            .card__container {
+                flex-basis: 90vw;
+                text-align: left;
+                margin-left: 100px;
+                margin-top: 50px;
+                .card {
+                    &__title {
+                    }
+                    &__text {
+                        margin: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}

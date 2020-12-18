@@ -1,0 +1,17 @@
+.footer {
+    text-align: center;
+    background-color: hsla(202, 11%, 66%, 0.103);
+    &--col {}
+    &__logo {
+        &__img {
+            width: 50px;
+            margin: 30px 0;
+        }
+    }
+    .footer__navs 
+    &__social__media {
+        &__media {
+            svg {}
+        }
+    }
+}

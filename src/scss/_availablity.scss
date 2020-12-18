@@ -1,0 +1,49 @@
+.availablity {
+    text-align: center;
+    &__title {
+        font-size: 30px;
+        max-width: 350px;
+        margin: auto;
+        color: $darkGrayishBlue;
+    }
+    &__text {
+        padding: 20px 0;
+        color: $grayishBlue;
+        font-size: $fontSize;
+        max-width: 340px;
+        margin: auto;
+    }
+    &__btn {
+        display: block;
+        font-size: $fontSize;
+        padding: 15px;
+        margin: 20px auto;
+        width: 75vw;
+        border-radius: 50px;
+        color: $white;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
+    }
+    &__btn--green {
+        background-color: $strongCyan;
+    }
+    &__btn--blue {
+        background-color: $lightBlue;
+    }
+}
+
+@media (min-width: 1200px) {
+    .availablity {
+        text-align: center;
+        &__title {
+            max-width: 450px;
+        }
+        &__text {
+            max-width: 640px;
+        }
+        &__btn {
+            display: inline;
+            width: 220px;
+            margin: 10px;
+        }
+    }
+}

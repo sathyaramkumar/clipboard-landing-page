@@ -1,0 +1,30 @@
+.access {
+    margin-top: 150px;
+    text-align: center;
+    &__title {
+        font-size: 35px;
+        color: $darkGrayishBlue;
+    }
+    &__text {
+        font-size: $fontSize;
+        color: $grayishBlue;
+        max-width: 350px;
+        margin: 20px auto;
+    }
+    &__img {
+        width: 90vw;
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .access {
+        &__text {
+            max-width: 700px;
+        }
+        &__img {
+            margin: 100px auto;
+            width: 65vw;
+        }
+    }
+}
