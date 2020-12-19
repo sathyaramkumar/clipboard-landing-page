@@ -1,6 +1,8 @@
 .header {
     text-align: center;
     padding: 100px 10px;
+    background: url(../images/bg-header-mobile.png) no-repeat top;
+    background-size: 100vw;
     &__logo {
         margin-bottom: 75px;
     }
@@ -37,6 +39,10 @@
 }
 
 @media (min-width: 1200px) {
+    .header {
+        background: url(../images/bg-header-desktop.png) no-repeat top;
+        background-size: 100vw;
+    }
     .header__content {
         &__title {
             max-width: 500px;

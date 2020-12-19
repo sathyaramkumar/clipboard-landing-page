@@ -25,6 +25,8 @@ button {
 .header {
   text-align: center;
   padding: 100px 10px;
+  background: url(../images/bg-header-mobile.png) no-repeat top;
+  background-size: 100vw;
 }
 
 .header__logo {
@@ -66,6 +68,10 @@ button {
 }
 
 @media (min-width: 1200px) {
+  .header {
+    background: url(../images/bg-header-desktop.png) no-repeat top;
+    background-size: 100vw;
+  }
   .header__content__title {
     max-width: 500px;
   }
@@ -316,11 +322,55 @@ button {
 
 .footer {
   text-align: center;
+  padding-bottom: 50px;
+  margin-top: 150px;
   background-color: rgba(159, 171, 178, 0.103);
 }
 
 .footer__logo__img {
   width: 50px;
   margin: 30px 0;
+}
+
+.footer .footer__navs .footer__nav__item {
+  padding: 20px 0;
+}
+
+.footer .footer__navs .footer__nav__item .footer__nav__link {
+  color: #4c545d;
+  font-size: 18px;
+}
+
+.footer__social__media {
+  margin-top: 20px;
+}
+
+.footer__social__media__link {
+  margin: 25px;
+}
+
+.footer__social__media__link svg path:hover {
+  fill: black;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 200px 200px 200px auto;
+        grid-template-columns: 200px 200px 200px 200px auto;
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+  .footer__logo {
+    margin-left: 150px;
+  }
+  .footer__social__media {
+    margin-left: auto;
+    margin-right: 150px;
+  }
+  .footer__social__media__link {
+    margin: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
